@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gallery</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: #ffffff;
+      color: #fff;
+    }
+
+    .gallery {
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 15px;
+    }
+
+    .gallery-item {
+      break-inside: avoid;
+
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.03);
+    }
+
+    .back-home {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      color: #ccc;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      z-index: 10;
+    }
+
+    .back-home:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+
+    /* Make sure max 5 items per row on large screens */
+    @media (min-width: 1200px) {
+      .gallery {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="gallery">
+    <div class="gallery-item"><img src="images/visual124.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual123.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual122.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual121.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual120.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual119.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual118.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual117.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual116.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual115.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual114.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual113.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual112.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual111.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual110.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual109.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual108.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual107.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual106.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual105.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual104.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual103.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual102.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual101.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual100.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual99.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual98.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual97.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual96.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual95.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual94.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual93.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual92.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual91.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual90.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual89.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual88.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual87.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual86.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual85.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual84.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual83.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual82.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual81.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual80.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual79.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual78.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual77.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual76.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual75.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual74.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual73.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual72.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual71.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual70.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual69.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual68.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual67.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual66.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual65.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual64.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual63.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual62.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual61.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual60.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual59.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual58.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual57.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual56.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual55.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual54.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual53.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual52.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual51.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual50.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual49.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual48.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual47.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual46.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual45.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual44.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual43.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/your-animation2.gif" alt="Animated GIF"></div>
+    <div class="gallery-item"><img src="images/visual41.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual40.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual39.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual38.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual37.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual36.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual35.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual34.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual33.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual32.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual31.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual30.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual29.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual28.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual27.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/your-animation1.gif" alt="Animated GIF"></div>
+    <div class="gallery-item"><img src="images/visual25.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual24.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual23.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual22.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual21.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual20.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual19.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual18.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual17.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual16.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual15.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual14.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual13.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual12.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual11.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual10.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual9.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual8.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual7.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual6.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual5.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual4.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual3.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual2.jpg" alt="Visual 1"></div>
+    <div class="gallery-item"><img src="images/visual1.jpg" alt="Visual 1"></div>
+
+
+    <!-- Add more images here -->
+  </div>
+
+  <a href="index.html" class="back-home">← Back</a>
+
+</body>
+</html>
