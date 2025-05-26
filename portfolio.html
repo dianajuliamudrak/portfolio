@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Portfolio Flipbook</title>
+
+  <!-- jQuery -->
+  <script src="js/jquery.min.js"></script>
+  <!-- Turn.js -->
+  <script src="js/turn.min.js"></script>
+
+  <style>
+    body {
+      margin: 0;
+      background: #ffffff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .flipbook-wrapper {
+      position: relative;
+    }
+
+    #flipbook {
+      width: 900px;
+      height: 400px;
+    }
+
+    #flipbook .page {
+      width: 450px;
+      height: 450px;
+      background-size: cover;
+      background-position: center;
+      box-shadow: 0 0 15px rgba(0,0,0,0.7);
+    }
+
+    .arrow-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgb(255, 255, 255);
+      color: rgb(0, 0, 0);
+      border: none;
+      font-size: 40px;
+      cursor: pointer;
+      padding: 10px 15px;
+      border-radius: 5px;
+      z-index: 10;
+      transition: background-color 0.3s ease;
+    }
+
+    .arrow-btn:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    #prevBtn {
+      left: -60px;
+    }
+
+    #nextBtn {
+      right: -60px;
+    }
+
+    .back-home {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .back-home:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="flipbook-wrapper">
+    <!-- Arrow buttons -->
+    <button id="prevBtn" class="arrow-btn">&#10094;</button> <!-- Left arrow -->
+    <div id="flipbook">
+      <div class="page" style="background-image: url('images/page1.jpg');"></div>
+      <div class="page" style="background-image: url('images/page2.jpg');"></div>
+      <div class="page" style="background-image: url('images/page3.jpg');"></div>
+      <div class="page" style="background-image: url('images/page4.jpg');"></div>
+      <div class="page" style="background-image: url('images/page5.jpg');"></div>
+      <div class="page" style="background-image: url('images/page6.jpg');"></div>
+      <div class="page" style="background-image: url('images/page7.jpg');"></div>
+      <div class="page" style="background-image: url('images/page8.jpg');"></div>
+      <div class="page" style="background-image: url('images/page9.jpg');"></div>
+      <div class="page" style="background-image: url('images/page10.jpg');"></div>
+      <div class="page" style="background-image: url('images/page11.jpg');"></div>
+      <div class="page" style="background-image: url('images/page12.jpg');"></div>
+      <div class="page" style="background-image: url('images/page13.jpg');"></div>
+      <div class="page" style="background-image: url('images/page14.jpg');"></div>
+      <div class="page" style="background-image: url('images/page15.jpg');"></div>
+      <div class="page" style="background-image: url('images/page16.jpg');"></div>
+      <div class="page" style="background-image: url('images/page17.jpg');"></div>
+      <div class="page" style="background-image: url('images/page18.jpg');"></div>
+      <div class="page" style="background-image: url('images/page19.jpg');"></div>
+      <div class="page" style="background-image: url('images/page20.jpg');"></div>
+      <div class="page" style="background-image: url('images/page21.jpg');"></div>
+      <div class="page" style="background-image: url('images/page22.jpg');"></div>
+      <div class="page" style="background-image: url('images/page23.jpg');"></div>
+      <div class="page" style="background-image: url('images/page24.jpg');"></div>
+      <div class="page" style="background-image: url('images/page25.jpg');"></div>
+      <div class="page" style="background-image: url('images/page26.jpg');"></div>
+      <div class="page" style="background-image: url('images/page27.jpg');"></div>
+      <div class="page" style="background-image: url('images/page28.jpg');"></div>
+      <div class="page" style="background-image: url('images/page29.jpg');"></div>
+      <div class="page" style="background-image: url('images/page30.jpg');"></div>
+      <div class="page" style="background-image: url('images/page31.jpg');"></div>
+      <div class="page" style="background-image: url('images/page32.jpg');"></div>
+      <div class="page" style="background-image: url('images/page33.jpg');"></div>
+      <div class="page" style="background-image: url('images/page34.jpg');"></div>
+      <div class="page" style="background-image: url('images/page35.jpg');"></div>
+      <div class="page" style="background-image: url('images/page36.jpg');"></div>
+      <div class="page" style="background-image: url('images/page37.jpg');"></div>
+      <div class="page" style="background-image: url('images/page38.jpg');"></div>
+      <div class="page" style="background-image: url('images/page39.jpg');"></div>
+      <div class="page" style="background-image: url('images/page40.jpg');"></div>
+      <div class="page" style="background-image: url('images/page41.jpg');"></div>
+      <div class="page" style="background-image: url('images/page42.jpg');"></div>
+      <div class="page" style="background-image: url('images/page43.jpg');"></div>
+    </div>
+    <button id="nextBtn" class="arrow-btn">&#10095;</button> <!-- Right arrow -->
+  </div>
+
+  <a href="index.html" class="back-home">← back </a>
+
+  <script>
+    $(document).ready(function () {
+      $('#flipbook').turn({
+        width: 900,
+        height: 600,
+        autoCenter: true
+      });
+
+      $('#prevBtn').click(function () {
+        $('#flipbook').turn('previous');
+      });
+
+      $('#nextBtn').click(function () {
+        $('#flipbook').turn('next');
+      });
+    });
+  </script>
+</body>
+</html>
